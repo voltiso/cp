@@ -1,0 +1,187 @@
+// ⠀ⓥ 2022     🌩    🌩     ⠀   ⠀
+// ⠀         🌩 V͛o͛͛͛lt͛͛͛i͛͛͛͛so͛͛͛.com⠀  ⠀⠀⠀
+
+{
+	"C_Cpp.clang_format_fallbackStyle": "{ BasedOnStyle: LLVM }",
+
+	"terminal.integrated.defaultProfile.linux": "bash-cp",
+	"terminal.integrated.profiles.linux": {
+		"bash-cp": {
+			"path": "bash",
+			"args": ["--init-file", "aliases.sh"],
+			"icon": "terminal-bash"
+		}
+	},
+
+	// "terminal.integrated.shellArgs.linux": ["--init-file", "aliases.sh"],
+
+	"editor.hover.delay": 200, // Let's be fast
+	// "editor.defaultFormatter": "esbenp.prettier-vscode",
+
+	"editor.codeActionsOnSave": {
+		"source.fixAll": true,
+		"source.fixAll.eslint": true
+	},
+
+	"files.encoding": "utf8",
+	"files.eol": "\n",
+	"editor.formatOnSave": true,
+	"files.insertFinalNewline": true,
+	"files.trimFinalNewlines": true, // Already handled by eslint
+
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"typescript.enablePromptUseWorkspaceTsdk": true,
+
+	"javascript.preferences.importModuleSpecifierEnding": "minimal",
+	"typescript.preferences.importModuleSpecifierEnding": "minimal",
+
+	"javascript.preferences.importModuleSpecifier": "shortest",
+	"typescript.preferences.importModuleSpecifier": "shortest",
+
+	"javascript.preferences.autoImportFileExcludePatterns": ["*/dist/*"],
+	"typescript.preferences.autoImportFileExcludePatterns": ["*/dist/*"],
+
+	"typescript.preferences.quoteStyle": "single",
+	"javascript.preferences.quoteStyle": "single",
+
+	"typescript.preferences.includePackageJsonAutoImports": "auto",
+
+	"exportall.config.semis": false,
+
+	"eslint.codeActionsOnSave.mode": "all", // slower
+	// "eslint.codeActionsOnSave.mode": "problems", // faster
+
+	"eslint.probe": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"jsonc",
+		"json5",
+		"yaml",
+		"toml",
+		"properties",
+		"ignore",
+		"editorconfig",
+		"markdown"
+	],
+
+	"eslint.validate": [
+		"javascript",
+		"javascriptreact",
+		"typescript",
+		"typescriptreact",
+		"json",
+		"jsonc",
+		"json5",
+		"yaml",
+		"toml",
+		"properties",
+		"ignore",
+		"editorconfig",
+		"markdown"
+	],
+
+	"prettier.documentSelectors": [
+		"**/.gitignore",
+		"**/.npmrc",
+		"**/.editorconfig"
+	],
+
+	"better-comments.tags": [
+		{
+			"tag": "!",
+			"color": "#FF2D00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "?",
+			"color": "#3498DB",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "//",
+			"color": "#474747",
+			"strikethrough": true,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "todo",
+			"color": "#FF8C00",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "*",
+			"color": "#98C379",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "transparent",
+			"bold": false,
+			"italic": false
+		},
+		{
+			"tag": "⠀",
+			"color": "#FF5500aa",
+			"strikethrough": false,
+			"underline": false,
+			"backgroundColor": "#aaddff22",
+			"bold": true,
+			"italic": false
+		}
+	],
+
+	"cSpell.words": [
+		"addf",
+		"atablash",
+		"chunkname",
+		"clipboardy",
+		"DDEBUG",
+		"Denque",
+		"DLOCAL",
+		"ERRV",
+		"esbuild",
+		"FORR",
+		"ggdb",
+		"GLIBCXX",
+		"ISTR",
+		"NZEC",
+		"schemar",
+		"sonarjs",
+		"stdc",
+		"superjson",
+		"trimend",
+		"trimstart",
+		"V͛o͛",
+		"Voltiso",
+		"Wextra",
+		"Wfatal",
+		"Winvalid",
+		"Wshadow",
+		"wtfnode"
+	],
+	"files.associations": {
+		"*.json": "jsonc",
+		".firebaserc": "jsonc",
+		"*.tcc": "cpp",
+		"deque": "cpp",
+		"forward_list": "cpp",
+		"list": "cpp",
+		"iostream": "cpp"
+	}
+}

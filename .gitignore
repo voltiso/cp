@@ -1,0 +1,24 @@
+# ⠀ⓥ 2022     🌩    🌩     ⠀   ⠀
+# ⠀         🌩 V͛o͛͛͛lt͛͛͛i͛͛͛͛so͛͛͛.com⠀  ⠀⠀⠀
+
+/task/*
+/.state.json
+/.pch
+
+.tsc-out/
+_outDir_PLEASE_OVERRIDE
+
+node_modules/
+
+dist/
+
+traceDir/
+
+*.tgz
+*.log
+*.tsbuildinfo
+.turbo
+
+firebase-*.json
+
+output_path
