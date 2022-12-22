@@ -1,14 +1,11 @@
 // ⠀ⓥ 2022     🌩    🌩     ⠀   ⠀
 // ⠀         🌩 V͛o͛͛͛lt͛͛͛i͛͛͛͛so͛͛͛.com⠀  ⠀⠀⠀
 
-import * as cp from 'node:child_process'
 import * as path from 'node:path'
-import { promisify } from 'node:util'
 
 import { findProgramPath } from '../../src/findProgramPath'
 import { loggedCopyFile, loggedMkdir } from './log'
-
-const exec = promisify(cp.exec)
+import { openVscode } from './openVscode'
 
 //
 
@@ -25,7 +22,6 @@ export const code = async (programOrTest?: string) => {
 }
 
 //
-
 
 //
 

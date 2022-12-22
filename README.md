@@ -25,6 +25,9 @@ Google it!
 pnpm install
 ```
 
+This will also pre-compile `bits/stdc++.h` headers into `.pch` folder, for both
+_debug_ and _release_ configurations.
+
 ## Start coding
 
 Code (hence `c`) the solution for task/problem `a`:
@@ -47,9 +50,6 @@ w
 ```
 
 This is the same as `w a` - the CLI uses last program by default.
-
-See `Compilation time optimization` to easily speed up watch mode and re-compile
-in around 200ms.
 
 ## Compile and run
 
@@ -96,17 +96,3 @@ Most commands allow omitting the program argument. Last program that you worked
 on will be used by default.
 
 The CLI state is saved to `.state.json`.
-
-# Compilation time optimization
-
-1. See where `bits/stdc++.h` is:
-
-```sh
-g++ ... -H
-```
-
-2. Pre-compile it using the same flags as in `util/Makefile`:
-
-```sh
-sudo g++ -std=c++17 -O3 -DLOCAL /usr/include/x86_64-linux-gnu/c++/9/bits/stdc++.h
-```
