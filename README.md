@@ -2,24 +2,41 @@
 
 Everything related to algorithm contests (competitive programming).
 
+Tested under `WSL/Ubuntu` with `g++`.
+
+# Prerequisites
+
+Install `Ubuntu 20.04.5 LTS` under `WSL2`, or natively - or a compatible
+environment.
+
+Optional: install _Homebrew_ for a good binary package manager (`brew`).
+
+## Install `g++`
+
+```sh
+sudo apt install g++
+```
+
+## Install `node` and `pnpm`
+
+Best to install `node` version `16` using `nvm`.
+
+After installing `node`, check `pnpm` documentation for recommended installation
+methods - possibly `npm i -g pnpm`.
+
+## Install C++ dependencies
+
+```sh
+sudo apt install nlohmann-json3-dev
+```
+
 # Getting Started
-
-Tested under `WSL/Ubuntu` and `g++`.
-
-Should work under different Linux distributions natively or under
-`Windows Subsystem for Linux` (highly recommended for Windows users).
-
-Not sure about `MacOS` - but it should work after minimum fixes.
 
 ## Open integrated terminal in `vscode`
 
 Use <kbd>Ctrl</kbd> + <kbd>`</kbd>.
 
-## Install `node` and `pnpm`.
-
-Google it!
-
-## Install scripting in this repository
+## Install scripting
 
 ```sh
 pnpm install

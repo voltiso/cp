@@ -1,0 +1,35 @@
+{
+  "name": "@voltiso/cp.cli",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": "git://github.com/voltiso/cp.git",
+  "__________": "__________",
+  "sideEffects": false,
+  "__________EXECUTABLES": "__________",
+  "bin": {
+    "vcp": "dist/cjs/_bin/cli.js"
+  },
+  "__________PUBLISH WHITELIST": "__________",
+  "files": [
+    "dist/",
+    "workspace-template/"
+  ],
+  "__________SCRIPTS": "__________",
+  "scripts": {
+    "build": "v build",
+    "build:cjs": "v buildCjs"
+  },
+  "__________DEPS": "__________",
+  "dependencies": {
+    "@voltiso/assertor": "^3.2.3",
+    "@voltiso/cp.util": "workspace:^",
+    "@voltiso/handler": "^2.0.4",
+    "@voltiso/schemar": "^22.1.12",
+    "@voltiso/util": "^53.0.4",
+    "@voltiso/util.rxjs": "^4.0.1",
+    "chalk": "^4",
+    "clipboardy": "^4.0.0",
+    "rxjs": "^7.8.1",
+    "superjson": "^2.2.1"
+  }
+}

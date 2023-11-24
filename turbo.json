@@ -1,0 +1,36 @@
+{
+	"$schema": "https://turborepo.org/schema.json",
+
+	"pipeline": {
+		"build:cjs": {
+			"dependsOn": ["^build:cjs"],
+			"outputs": ["dist/cjs/**"]
+		},
+
+		"lint:eslint": {
+			"dependsOn": ["^build:cjs", "build:cjs"],
+			"inputs": ["**", "!dist/**"],
+			"outputs": []
+		},
+
+		"lint:tsc": {
+			"dependsOn": ["^build:cjs"],
+			"inputs": ["**", "!dist/**"],
+			"outputs": []
+		},
+
+		"depcheck": {
+			"outputs": []
+		},
+
+		"typecov": {
+			"dependsOn": ["^build:cjs"],
+			"inputs": ["src/**", "package.json"],
+			"outputs": ["package.json"]
+		},
+
+		"fix:prettier": {},
+
+		"fix:eslint": {}
+	}
+}

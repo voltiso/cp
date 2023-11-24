@@ -1,0 +1,13 @@
+// ⠀ⓥ 2023     🌩    🌩     ⠀   ⠀
+// ⠀         🌩 V͛o͛͛͛lt͛͛͛i͛͛͛͛so͛͛͛.com⠀  ⠀⠀⠀
+
+{
+	"terminal.integrated.defaultProfile.linux": "bash-cp",
+	"terminal.integrated.profiles.linux": {
+		"bash-cp": {
+			"path": "bash",
+			"args": ["--init-file", "aliases.sh"],
+			"icon": "terminal-bash"
+		}
+	}
+}

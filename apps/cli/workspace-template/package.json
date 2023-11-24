@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "prepare": "vcp prepareWorkspace"
+  },
+  "dependencies": {
+    "@voltiso/cp.util": "^1.0.0",
+    "@voltiso/util": "^53.0.4"
+  }
+}

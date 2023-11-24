@@ -6,11 +6,11 @@
 
 	"compilerOptions": {
 		"declaration": false,
-		"declarationMap": false
+		"declarationMap": false,
 
-		// "paths": {
-		// 	"~": ["./src"],
-		// 	"~/*": ["./src/*"]
-		// }
+		"paths": {
+			"~": ["./src"],
+			"~/*": ["./src/*"]
+		}
 	}
 }

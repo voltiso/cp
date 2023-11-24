@@ -1,0 +1,15 @@
+{
+  "name": "@voltiso/cp.jail",
+  "bin": {
+    "jail": "dist/jail"
+  },
+  "__________SCRIPTS": "__________",
+  "scripts": {
+    "build": "v build"
+  },
+  "__________DEPS": "__________",
+  "devDependencies": {
+    "@voltiso/script": "^2.0.8",
+    "esbuild": "^0.19.7"
+  }
+}

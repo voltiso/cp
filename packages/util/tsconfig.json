@@ -5,12 +5,9 @@
 	"extends": "@voltiso/config.ts",
 
 	"compilerOptions": {
-		"declaration": false,
-		"declarationMap": false
-
-		// "paths": {
-		// 	"~": ["./src"],
-		// 	"~/*": ["./src/*"]
-		// }
+		"paths": {
+			"~": ["./src"],
+			"~/*": ["./src/*"]
+		}
 	}
 }
